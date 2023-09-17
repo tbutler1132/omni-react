@@ -1,26 +1,53 @@
+body {
+  background-color: rgb(213, 209, 209);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .App {
   text-align: center;
+}
+
+/* Nav */
+
+.nav {
+  margin-top: 1rem;
 }
 
 /* Posts Feature */
 
 .posts-page {
-  border: solid;
   display: grid;
-  grid-template-columns: 20% 80%;
+  /* grid-template-columns: 20% 80%; */
+  grid-template-columns: 100%;
 }
 
 .posts-container {
   height: 100vh;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
 }
 
 .post-container {
-  border: solid;
+  text-align: left;
+  padding: 2rem;
 }
 
 .side-nav {
   border: dotted;
+}
+
+/* Components */
+
+.list-card {
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+  border-radius: .5rem;
 }
 
 

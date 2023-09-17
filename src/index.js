@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Posts from './features/posts/Posts';
+import Post from './features/posts/Post';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Posts />
-      }]
+      },
+      {
+        path: "posts/:id",
+        element: <Post />,
+      }
+    ]
   }
 ]);
 
